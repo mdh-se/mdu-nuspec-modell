@@ -9,9 +9,9 @@
     <relativePath>../mdu-oss-parent/pom.xml</relativePath>
   </parent>
 
-  <groupId>se.mdh.nuspec</groupId>
-  <artifactId>mdh-nuspec-modell</artifactId>
-  <version>1.1.1-SNAPSHOT</version>
+  <groupId>se.mdu.nuspec</groupId>
+  <artifactId>mdu-nuspec-modell</artifactId>
+  <version>2.0.0-SNAPSHOT</version>
 
   <name>${project.groupId}:${project.artifactId}</name>
   <description>Modeller för nuspec-filer.</description>
@@ -59,7 +59,7 @@
           <artifactId>maven-checkstyle-plugin</artifactId>
           <configuration>
             <!-- Exclude the generated sources -->
-            <excludes>se/mdh/nuspec/modell/**/*.java</excludes>
+            <excludes>se/mdu/nuspec/modell/**/*.java</excludes>
           </configuration>
         </plugin>
         <plugin>
@@ -68,7 +68,7 @@
           <configuration>
             <!-- Exclude the generated sources -->
             <excludes>
-              <exclude>se/mdh/nuspec/modell/**/*.java</exclude>
+              <exclude>se/mdu/nuspec/modell/**/*.java</exclude>
             </excludes>
           </configuration>
         </plugin>
@@ -89,7 +89,7 @@
         <configuration>
           <xsdOptions>
             <xsdOption>
-              <packagename>se.mdh.nuspec.modell</packagename>
+              <packagename>se.mdu.nuspec.modell</packagename>
             </xsdOption>
           </xsdOptions>
         </configuration>
