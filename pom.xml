@@ -3,10 +3,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>se.mdh</groupId>
-    <artifactId>mdh-parent</artifactId>
-    <version>60</version>
-    <relativePath>../mdh-parent/pom.xml</relativePath>
+    <groupId>se.mdu</groupId>
+    <artifactId>mdu-oss-parent</artifactId>
+    <version>64-SNAPSHOT</version>
+    <relativePath>../mdu-oss-parent/pom.xml</relativePath>
   </parent>
 
   <groupId>se.mdh.nuspec</groupId>
