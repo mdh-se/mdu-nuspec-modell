@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jaxb:bindings jaxb:extensionBindingPrefixes="xjc"
-               jaxb:version="2.1"
-               xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
-               xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
-               xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <jaxb:globalBindings fixedAttributeAsConstantProperty="true"
-                       generateElementProperty="false">
-    <jaxb:serializable uid="1"/>
+<bindings extensionBindingPrefixes="xjc"
+          xsi:schemaLocation="https://jakarta.ee/xml/ns/jaxb https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd"
+          version="3.0"
+          xmlns="https://jakarta.ee/xml/ns/jaxb"
+          xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <globalBindings fixedAttributeAsConstantProperty="true"
+                  generateElementProperty="false">
+    <serializable uid="1"/>
     <!-- Eliminera JAXBElement så mycket som möjligt -->
     <xjc:simple/>
-  </jaxb:globalBindings>
-</jaxb:bindings>
+  </globalBindings>
+</bindings>

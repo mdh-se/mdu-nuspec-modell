@@ -5,7 +5,7 @@
   <parent>
     <groupId>se.mdu</groupId>
     <artifactId>mdu-oss-parent</artifactId>
-    <version>64</version>
+    <version>65-SNAPSHOT</version>
     <relativePath>../mdu-oss-parent/pom.xml</relativePath>
   </parent>
 
@@ -27,19 +27,23 @@
     <dependency>
       <groupId>jakarta.validation</groupId>
       <artifactId>jakarta.validation-api</artifactId>
+      <version>3.1.1</version>
     </dependency>
     <dependency>
       <groupId>jakarta.xml.bind</groupId>
       <artifactId>jakarta.xml.bind-api</artifactId>
+      <version>4.0.4</version>
     </dependency>
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
+      <version>3.19.0</version>
     </dependency>
     <!-- Implementation javax.xml.bind -->
     <dependency>
       <groupId>org.glassfish.jaxb</groupId>
       <artifactId>jaxb-runtime</artifactId>
+      <version>4.0.6</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>
@@ -76,22 +80,19 @@
     </pluginManagement>
     <plugins>
       <plugin>
-        <groupId>org.apache.cxf</groupId>
-        <artifactId>cxf-xjc-plugin</artifactId>
+        <groupId>org.jvnet.jaxb</groupId>
+        <artifactId>jaxb-maven-plugin</artifactId>
         <executions>
           <execution>
-            <id>generate-sources</id>
+            <id>xjc</id>
+            <phase>generate-sources</phase>
             <goals>
-              <goal>xsdtojava</goal>
+              <goal>generate</goal>
             </goals>
           </execution>
         </executions>
         <configuration>
-          <xsdOptions>
-            <xsdOption>
-              <packagename>se.mdu.nuspec.modell</packagename>
-            </xsdOption>
-          </xsdOptions>
+          <generatePackage>se.mdu.nuspec.modell</generatePackage>
         </configuration>
       </plugin>
     </plugins>
