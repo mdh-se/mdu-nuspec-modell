@@ -5,7 +5,7 @@
   <parent>
     <groupId>se.mdu</groupId>
     <artifactId>mdu-oss-parent</artifactId>
-    <version>65-SNAPSHOT</version>
+    <version>66</version>
     <relativePath>../mdu-oss-parent/pom.xml</relativePath>
   </parent>
 
@@ -39,7 +39,7 @@
       <artifactId>commons-lang3</artifactId>
       <version>3.19.0</version>
     </dependency>
-    <!-- Implementation javax.xml.bind -->
+    <!-- Implementation jakarta.xml.bind -->
     <dependency>
       <groupId>org.glassfish.jaxb</groupId>
       <artifactId>jaxb-runtime</artifactId>
